@@ -16,13 +16,77 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
+
+        <style>
+            /* Mobile-specific styles */
+            @media (max-width: 768px) {
+                /* Navbar on mobile */
+                #sideNav {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    height: auto;
+                    z-index: 1030;
+                    background-color: #007bff;
+                    padding: 0.5rem 1rem;
+                }
+
+                .navbar-brand span {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                }
+
+                .navbar-collapse {
+                    justify-content: center;
+                }
+
+                .navbar-toggler {
+                    margin-left: auto;
+                }
+
+                /* Profile image */
+                .img-profile {
+                    width: 100px;
+                    height: 100px;
+                    display: block;
+                    margin: 1rem auto;
+                }
+
+                /* Quick Links and Resume button */
+                .social-icons {
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+
+                .social-icons .social-icon {
+                    margin-right: 10px;
+                }
+
+                .social-icons img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .social-icons button {
+                    margin-top: 1rem;
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                /* Adjustments for content visibility */
+                .resume-section {
+                    padding-top: 4rem; /* Space below the navbar */
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Saketh Nandula</span>
-                <span class="d-block d-md-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="profile.jpg" alt="Saketh"/></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="profile.jpg" alt="Saketh"/></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -51,7 +115,7 @@
                     <p class="lead mb-5">Hi, I’m Saketh, a student with a passion for coding and problem-solving, actively seeking internship opportunities to further develop my skills in a real-world setting. I have a solid foundation in languages like Java and Python, with experience in projects ranging from simple applications to more complex algorithms. Eager and excited to learn and grow in the field of software development, I’m ready to contribute my skills to innovative projects and learn from experienced professionals.</p>
                     <div class="social-icons">
                         Quick Links :<br><br>
-                        <a class="social-icon" href="https://www.linkedin.com/in/saketh0104"alt="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/saketh0104" alt="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/saketh0104" alt="GitHub"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://www.instagram.com/saketh.nv" alt="Instagram"><i class="fab fa-instagram"></i></a>
                         <a class="social-icon" href="https://www.leetcode.com/saketh0104">
@@ -103,7 +167,6 @@
     </div>
 </section>
 <hr class="m-0" />
-
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
