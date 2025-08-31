@@ -1,311 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Saketh's Portfolio</title>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Saketh's Portfolio</title>
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS -->
+    <link href="styles.css" rel="stylesheet" />
 
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
+    <style>
+        @media (max-width: 768px) {
+            #sideNav { position: fixed; top: 0; width: 100%; z-index: 1030; background-color: #007bff; padding: 0.5rem 1rem; }
+            .navbar-brand span { display: block; text-align: center; margin-bottom: 0.5rem; }
+            .navbar-collapse { justify-content: center; }
+            .navbar-toggler { margin-left: auto; }
+            .img-profile { width: 100px; height: 100px; display: block; margin: 1rem auto; }
+            .social-icons { text-align: center; margin-top: 1rem; }
+            .social-icons .social-icon { margin-right: 10px; }
+            .social-icons img { width: 24px; height: 24px; }
+        }
 
-        <style>
-            /* Mobile-specific styles */
-            @media (max-width: 768px) {
-                /* Navbar on mobile */
-                #sideNav {
-                    position: fixed;
-                    top: 0;
-                    width: 100%;
-                    height: auto;
-                    z-index: 1030;
-                    background-color: #007bff;
-                    padding: 0.5rem 1rem;
-                }
+        #contact-btn {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1050;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Contact Button -->
+    <div id="contact-btn">
+        <a href="mailto:saketh0104@gmail.com">
+            <button style="background-color: #0066cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                Contact Me
+            </button>
+        </a>
+    </div>
 
-                .navbar-brand span {
-                    display: block;
-                    text-align: center;
-                    margin-bottom: 0.5rem;
-                }
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Saketh Nandula</span>
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="Saketh Upscaled pfp.jpg" alt="Saketh"/>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                .navbar-collapse {
-                    justify-content: center;
-                }
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">Saketh <span class="text-primary">Nandula</span></h1>
+                <div class="subheading mb-5">
+                    <a href="mailto:saketh0104@gmail.com">saketh0104@gmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    Hi, I’m Saketh, currently pursuing B.Tech in Artificial Intelligence and Data Science.
+                    Passionate about programming (especially Java), full-stack development, data analytics, and cloud technologies.
+                    I enjoy building impactful projects, optimizing systems, and learning emerging technologies like Generative AI and LLMs.
+                </p>
+                <div class="social-icons mb-3">
+                    <a class="social-icon" href="https://www.linkedin.com/in/saketh0104"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/saketh0104"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://www.leetcode.com/saketh0104">
+                        <img src="leetcode.png" alt="LeetCode">
+                    </a>
+                    <a class="social-icon" href="https://github.com/saketh0104/Resume/blob/main/Resume.pdf" target="_blank">
+                        <button style="background-color: #bd5d38; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+                            Resume
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-                .navbar-toggler {
-                    margin-left: auto;
-                }
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column mb-5">
+                    <div class="flex-grow-1">
+                        <a href="https://www.vrsiddhartha.ac.in"><h3 class="mb-0">Velagapudi Ramakrishna Siddhartha Engineering College</h3></a>
+                        <div class="subheading mb-3">B.Tech - Artificial Intelligence & Data Science</div>
+                        <p>GPA: 9.29 / 10</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2022-2026</span></div>
+                </div>
+                <div class="d-flex flex-column mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Narayana Junior College</h3>
+                        <div class="subheading mb-3">Class XII</div>
+                        <p>Percentage: 96.4%</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2020-2022</span></div>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Dr. KKR's Gowtham Concept School</h3>
+                        <div class="subheading mb-3">Class X</div>
+                        <p>Percentage: 96.4%</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2016-2020</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-                /* Profile image */
-                .img-profile {
-                    width: 100px;
-                    height: 100px;
-                    display: block;
-                    margin: 1rem auto;
-                }
-
-                /* Quick Links and Resume button */
-                .social-icons {
-                    text-align: center;
-                    margin-top: 1rem;
-                }
-
-                .social-icons .social-icon {
-                    margin-right: 10px;
-                }
-
-                .social-icons img {
-                    width: 24px;
-                    height: 24px;
-                }
-
-                .social-icons button {
-                    margin-top: 1rem;
-                    display: inline-block;
-                    width: 100%;
-                }
-
-                /* Adjustments for content visibility */
-                .resume-section {
-                    padding-top: 4rem; /* Space below the navbar */
-                }
-            }
-        </style>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Saketh Nandula</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="Saketh Upscaled pfp.jpg" alt="Saketh"/></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Key Skills</h2>
+                <div class="subheading mb-3">Programming & Tools</div>
+                <ul class="fa-ul mb-0">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Java, Python, SQL</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>React, Node.js, Express.js, FastAPI, HTML, CSS, JavaScript</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>MySQL, MongoDB, DuckDB</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Machine Learning & Deep Learning (TensorFlow, Keras, scikit-learn, CNNs)</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Generative AI & LLM Integration (OpenAI, Gemini APIs)</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Cloud & Infra (GCP, AWS, Terraform basics)</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Git, Docker, Jupyter</li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-           <!-- About-->
-<section class="resume-section" id="about">
-    <div class="resume-section-content">
-        <h1 class="mb-0">
-            Saketh
-            <span class="text-primary">Nandula</span>
-        </h1>
-        <div class="subheading mb-5">
-            <a href="mailto:saketh0104@gmail.com">saketh0104@gmail.com</a>
-        </div>
-        <p class="lead mb-5">
-            Hi, I’m Saketh, currently pursuing a B.Tech in Artificial Intelligence and Data Science. I’m passionate about programming, especially in Java, and have growing experience in data analytics and cloud-based technologies. I’m particularly interested in roles that involve backend/cloud development, data processing pipelines, and system optimization. With hands-on experience in multiple projects and a strong foundation in core CS concepts, I’m looking forward to contributing to impactful cloud-side roles and learning from real-world development environments.
-        </p>
-        <div class="social-icons">
-            Quick Links: <br><br>
-            <a class="social-icon" href="https://www.linkedin.com/in/saketh0104" alt="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="https://github.com/saketh0104" alt="GitHub"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="https://www.leetcode.com/saketh0104">
-                <img src="leetcode.png" alt="LeetCode" style="width: 24px; height: 24px;">
-            </a>
-        </div>
+        </section>
+        <hr class="m-0" />
 
-        <!-- Resume Button -->
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="https://github.com/saketh0104/Resume/blob/main/Resume.pdf" target="_blank">
-                <button style="background-color: #bd5d38; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
-                    Resume
-                </button>
-            </a>
-        </div>
+        <!-- Projects -->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects</h2>
 
-        <!-- Contact Me Button -->
-        <div style="text-align: center; margin-top: 20px;">
-            <a href="mailto:saketh0104@gmail.com">
-                <button style="background-color: #0066cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
-                    Contact Me
-                </button>
-            </a>
-        </div>
-    </div>
-</section>
-<hr class="m-0" />
-
-
-            <!-- Education-->
-<section class="resume-section" id="education">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Education</h2>
-        <div class="d-flex flex-column mb-5">
-            <div class="flex-grow-1">
-                <a href="https://www.vrsiddhartha.ac.in">
-                    <h3 class="mb-0">Velagapudi Ramakrishna Siddhartha Engineering College</h3>
-                </a>
-                <div class="subheading mb-3">Bachelor of Technology</div>
-                <div>Computer Science - Artificial Intelligence and Data Science</div>
-                <p>GPA: 9.44</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2022-2026</span></div>
-        </div>
-        <div class="d-flex flex-column mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Narayana Junior College</h3>
-                <div class="subheading mb-3">Intermediate</div>
-                <div>SSC</div>
-                <p>Percentage: 96.4</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2020-2022</span></div>
-        </div>
-        <div class="d-flex flex-column">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Dr. KKR's Gowtham Concept School</h3>
-                <div class="subheading mb-3">Secondary Schooling</div>
-                <div>SSC</div>
-                <p>Percentage: 96.4</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2016-2020</span></div>
-        </div>
-    </div>
-</section>
-<hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Key Skills</h2>
-                    <div class="subheading mb-3">Programming Languages</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fa-solid fa-database"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Expertise Area</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            DSA in Java, Python
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            OOPS in Java
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Algorithms Design and Analysis
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Advanced Java Programming (Servlets, JSP, Hibernate, JDBC, Spring framework)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            DBMS and SQL
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            JavaScript, TypeScript and React JS
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Machine Learning in Python
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Introduction to Artificial Intelligence, Deep Learning, Natural Language Processing
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!--Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Tent Detection</h3>
-                            <div class="subheading mb-3">Detecting suspicious militay tents in Satellite Imagery using Deep Learning</div>
-                            <p>Together with my project partner, I meticulously prepared a dataset of tents using image preprocessing and augmentation techniques and developed an enhanced YOLOv8x-obb model, achieving 95% accuracy and 93% precision in detecting suspicious military tents and refugee encampments.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2024 - August 2024</span></div>
+                <!-- Talk2SQL Project -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Talk2SQL — Voice-Controlled Database Interface</h3>
+                        <div class="subheading mb-3">Python, FastAPI, DuckDB, Faster Whisper, Gemini API, Bootstrap</div>
+                        <ul>
+                            <li>Developed an end-to-end system converting <strong>voice prompts → SQL queries → executed results</strong> in real-time.</li>
+                            <li>Integrated Faster Whisper for audio transcription and Gemini 2.5 Flash LLM for natural language to SQL conversion.</li>
+                            <li>Implemented CRUD operations on a DuckDB backend with a responsive FastAPI + Bootstrap interface.</li>
+                        </ul>
                     </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            NPTEL
-                            <ol>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Programming%20in%20Modern%20C%2B%2B.pdf" >Programming in Modern C++ (Offered by IIT Kharagpur)</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Foundations%20Of%20R%20Software.pdf" >Foundations of R Software (Offered by IIT Kanpur)</a></li>
-                            </ol>
-                        </li>
-                        <br>
-                        <li>
-                            CISCO NETWORKING ACADEMY
-                            <ol>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/NDG%20Linux%20Essentials.pdf" >NDG Linux Essentials</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/IoT%20Fundamentals%20Connecting%20Things.pdf" >IoT Fundamentals: Connecting Things</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Introduction%20to%20Cybersecurity.pdf" >Introduction to Cyber Security</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/PCAP%20Programming%20Essentials%20in%20Python.pdf" >PCAP: Programming Essentials in Python</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/CLA%20Programming%20Essentials%20in%20C.pdf" >CLA: Programming Essentials in C</a></li>
-                            </ol>
-                        </li>
-                        <br>
-                        <li>
-                            ORACLE ACADEMY
-                            <ol>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Database%20Foundations%20by%20Oracle%20Academy.pdf" >Database Foundations</a></li>
-                            </ol>  
-                        </li>
-                        <br>
-                        <li>
-                            INFOSYS SPRINGBOARD
-                            <ol>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Introduction%20to%20Artificial%20Intelligence%20by%20Infosys%20Springboard.pdf" >Introduction to Artificial Intelligence</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Introduction%20to%20Deep%20Learning%20by%20Infosys%20Springboard.pdf" >Introduction to Deep Learning</a></li>
-                                <li><a href="https://github.com/saketh0104/My-Certifications/blob/f0c787214cb52d41bb98c6b3cdd5accacd0db4c1/Introduction%20to%20Natural%20Language%20Processing%20Infosys%20Springboard.pdf" >Introduction to Natural Language Processing</a></li>
-                            </ol>
-                        </li>
-                    </ul>
+                    <div class="flex-shrink-0"><span class="text-primary">Aug 2025</span></div>
                 </div>
-            </section>
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Key Interests</h2>
-                    <p><b>Proficient in Java, Python, and JavaScript Libraries</b><br>Continuously expanding my knowledge and expertise in these programming languages to stay at the forefront of development.</p>
-                    <p><b>Exploring New AI Tools</b><br>Enthusiastic about discovering upcoming AI tools in the market, testing them, and experimenting with them for fun and learning.</p>
-                    <p><b>Interested in Learning About Generative AI</b><br>Actively looking forward to understanding Generative AI and exploring its potential applications across various domains.</p>
-                    <p><b>Tech Trend Explorer</b><br>Regularly browsing and staying updated with the latest trends and advancements in technology to keep my skills relevant and future-ready.</p>
-                    <br><br>
-                    <h2 class="mb-5">Other Interests (Hobbies)</h2>
-                    <p>I enjoy spending time outdoors and often visit tourist spots during extended holidays with family and friends. I also have a keen interest in video editing, creating small-scale videos that I love sharing on social media, where I frequently generate humorous content. Additionally, I enjoy watching films, listening to music, and following football.</p>
+
+                <!-- Other Projects (Keep your existing ATS-friendly ones) -->
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Maritime Target Classification</h3>
+                        <div class="subheading mb-3">CNN + YOLOv11 on SAR Imagery</div>
+                        <p>Enhanced low-resolution SAR images using a custom Super-Resolution CNN and integrated YOLOv11 to classify 7 types of maritime vessels. Achieved 93% classification accuracy and a 21.5% mAP@0.5 improvement.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Feb 2025 – Jul 2025</span></div>
                 </div>
-            </section>
-            <hr class="m-0" />
-        </div>
-        
-        <!-- Core theme JS-->
-        <script src="scripts.js"></script>
-    </body>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Unauthorized Encampments Detection</h3>
+                        <div class="subheading mb-3">YOLOv8x-OBB on Optical Imagery</div>
+                        <p>Developed a deep learning pipeline to detect unauthorized encampments, achieving 96% accuracy with minimal false positives. Applied data augmentation and preprocessing for robust real-time detection.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Apr 2024 – Jun 2024</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Full-Stack Vacation Rental Platform</h3>
+                        <div class="subheading mb-3">MERN Stack Application</div>
+                        <p>Developed a full-stack web app handling property listings, bookings, and JWT-based authentication using React, Node.js, Express, and MongoDB.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Sep 2023 – Nov 2023</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Courses / Certificates -->
+        <section class="resume-section" id="courses">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Courses Completed</h2>
+                <ul class="fa-ul mb-0">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Java Foundations – Infosys SpringBoard</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>DSA using Java – Infosys SpringBoard</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Programming Essentials in Python – OpenEDG</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Database Foundations – Oracle Academy</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Neural Networks & Deep Learning – Coursera</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Introduction to Generative AI – AWS Educate</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Design, Technology & Innovation – NPTEL</li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Interests -->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Key Interests</h2>
+                <p><b>Programming Mastery:</b> Strengthening skills in Java, Python, and JavaScript frameworks.</p>
+                <p><b>AI & Generative AI Exploration:</b> Experimenting with new AI tools, LLMs, and generative AI applications.</p>
+                <p><b>Tech Trends:</b> Staying updated with emerging technologies and cloud practices.</p>
+                <br><br>
+                <h2 class="mb-5">Hobbies</h2>
+                <p>Traveling, video editing, creating content for social media, watching films, listening to music, and following football.</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+    </div>
+
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
+</body>
 </html>
